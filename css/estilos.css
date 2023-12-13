@@ -1,3 +1,6 @@
+.btn-home
+
+
 body{
     background-color: #fff;
     color: #919191;
@@ -6,15 +9,23 @@ body{
 h1{    
     font-size: 30px;
     font-weight: 300;
+    color: #919191;
+    font-style: normal;
+    font-family: "Montserrat", sans-serif;
 }
 h2{
   text-align: center;
   font-size: 40px;
   font-weight: 400;
+  font-family: "Montserrat", sans-serif;
 }
 .text-header{
     font-size: 19px;
     font-weight: 300;
+    color: #919191;
+    font-style: normal;
+    text-align: right;
+    font-family: "Montserrat", sans-serif;
 }
 .border-header{
     border-top: 1px solid #9E9E9E;
@@ -42,27 +53,36 @@ h2{
   border-right: 1px  solid #D9D9D9;
   border-top: 1px  solid #D9D9D9;
   margin: 5px;
+}
+.border-sigue-active{
+  border-left: 2px  solid #E7D842;
+  border-right: 2px  solid #E7D842;
+  border-top: 2px  solid #E7D842;
+  margin: 5px;
 }   
 .titulo-registro{
+    font-family: "Montserrat", sans-serif;
     font-size: 43px;
     font-weight: 700;
     background: linear-gradient(90deg, #0074CA 34.6%, #00C7F8 65.32%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    
 }
 .fecha-registro{
   color: #919191;
   text-align: center;
   font-size: 24px;
   font-weight: 300;
+  font-family: "Montserrat", sans-serif;
 }
 .border-buttom-registro{
   margin-top: -13px;
 }
 .line-bottom{
   position: relative;
-  top: 10px;
+  top: 11px;
 }
 
 .g-titulo{
@@ -73,6 +93,8 @@ h2{
     font-size: 80px;
     font-weight: 700;
     text-align: center;
+    font-family: "Montserrat", sans-serif;
+    line-height: 80px;
 }
 
 .button-reg {
@@ -81,6 +103,7 @@ h2{
   padding: 10px 15px;
   position: relative;
   cursor: pointer;
+  font-family: "Montserrat", sans-serif;
   /* button */
   /* bg button */
 }
@@ -177,6 +200,7 @@ h2{
   font-weight: 700;
   cursor: pointer;
   transition: all 0.25s ease;
+  font-family: "Montserrat", sans-serif;
 }
 
 .btn-home:hover{
@@ -216,6 +240,7 @@ h2{
   display: inline-block;
   padding-top: 10px;
   text-decoration: none;
+  font-family: "Montserrat", sans-serif;
 }
 
 
@@ -287,7 +312,8 @@ h2{
   width: 480px;
   border: 1px solid #adadaf;
   padding: 5px 0.8em;
-  border-radius: 0px
+  border-radius: 0px;
+  font-family: "Montserrat", sans-serif;
 }
 .btn-flip:hover:after {
   opacity: 1;
@@ -664,11 +690,41 @@ h2{
   font-size: 24px;
   font-weight: 300;
   text-align: center;
+  font-family: "Montserrat", sans-serif;
+  color: #919191;
 }
 
-@media (max-width: 575.98px){
-.elementor-23793 .elementor-element.elementor-element-523d415:not(.elementor-motion-effects-element-type-background), .elementor-23793 .elementor-element.elementor-element-523d415 > .elementor-motion-effects-container > .elementor-motion-effects-layer {
-    margin-left: 6px
-}}
 
-
+@media (max-width: 575.98px) {
+  .btn-flip {
+    line-height: 30px;
+    font-size: 20px;
+    width: 300px;
+    padding: 5px 0.2em;
+    font-weight: 600!important;
+  }
+  .play {
+    width: 100%;
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center; 
+  }
+  h1{
+    margin-left: 30px;
+  }
+  .i-der {
+    width: 2.33333%;
+    margin-right: -5px;
+    position: relative;
+    top: -140px;
+    right: -25px;
+  }
+  .mt{
+    margin-top: 18px;
+  }
+  .row article{
+    flex: 1;
+    order:1;
+  }
+  
+ }
