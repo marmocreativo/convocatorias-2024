@@ -45,7 +45,7 @@ h2{
   border-left: 1px  solid #919191;
   border-right: 1px  solid #919191;
   border-top: 1px  solid #919191;
-  padding: 1.5em;
+  padding: .5em;
   margin: 0px;
 }
 .border-sigue{
@@ -603,7 +603,7 @@ h2{
 /* boton arrow */
 .arrow-icon {
   background-color: #fff;
-  width: 65px;
+  width: 70px;
   display: block;
   margin: 0 auto;
   position: relative;
@@ -698,8 +698,8 @@ h2{
 @media (max-width: 575.98px) {
   .btn-flip {
     line-height: 30px;
-    font-size: 20px;
-    width: 300px;
+    font-size: 18px;
+    width: 100%;
     padding: 5px 0.2em;
     font-weight: 600!important;
   }
@@ -722,9 +722,11 @@ h2{
   .mt{
     margin-top: 18px;
   }
-  .row article{
-    flex: 1;
-    order:1;
+  .btn-home{
+    width: 300px;
+    font-size: 16px;
   }
-  
+  .border-buttom-registro{
+    margin-top: -3px;
+  }
  }
