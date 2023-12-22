@@ -558,7 +558,6 @@ h2{
   opacity: 0.3;
 }
 .playBut {
-  /*  border: 1px solid red;*/
   display: inline-block;
   transition: all 0.5s ease;
 }
@@ -832,6 +831,9 @@ h2{
   font-weight: 700;
   text-align: center;
 }
+.top{
+  margin-top: -60px;
+}
 .fecha-limite{
   color: #0074CA;
   font-size: 20px;
@@ -839,7 +841,7 @@ h2{
 }
 .line-media{
   margin: 0 auto;
-  width: 566px;
+  width: 95%;
   height: 3px;
   background: linear-gradient(270deg, #00C7F8 0%, #0074CA 100%);
   opacity: 1;
@@ -847,8 +849,9 @@ h2{
 .aviso{
   color: #0074CA;
   text-align: center;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 300;
+  
 }
 .aviso span{
   font-weight: 700;
@@ -971,7 +974,7 @@ h2{
   span.compartir-rs {
       position: absolute;
       z-index: 99;
-      width: 265px;
+      width: 300px;
       height: 40px;
       font-size: 20px;
       text-align: center;
@@ -1031,3 +1034,17 @@ h2{
 /* media kit */
 
 
+@media (max-width: 575.98px) { 
+  .menu .btn-medios{
+    width: 50px;
+  }
+  .fecha-limite{
+    font-size: 16px;
+  }
+  .mes{
+    font-size: 25px;
+  }
+  .top{
+    margin-top: -40px;
+  }
+ }
