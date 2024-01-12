@@ -947,7 +947,19 @@ h2{
       transition: all .3s ease;
       padding: 0 10px;
   }
-  
+  .container-mv{
+    background-color: #0074CA;
+    text-align: center;
+  }
+  .container-mv i.c {
+    opacity: 1;
+    font-size: 28px;
+    color: #fff;
+    will-change: transform;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    padding: 8px 10px;
+}
   .btn_wrap {
     margin: 10px 0;
     position: relative;
