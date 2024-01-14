@@ -181,7 +181,7 @@ h2{
 
 
 
-.btn-home{
+.btn-homeconv{
   outline: none;
   height: 45px;
   text-align: center;
@@ -202,7 +202,7 @@ h2{
   font-family: "Montserrat", sans-serif;
 }
 
-.btn-home:hover{
+.btn-homeconv:hover{
   background-position: right bottom;
   border-bottom: 3px solid #FF9E1F;
   color: #fff;
@@ -606,7 +606,7 @@ h2{
   position: relative;
   cursor: pointer;
   border-radius: 4px;
-  z-index: 100;
+  z-index: 49;
 }
 
 .left-bar {
@@ -719,7 +719,7 @@ h2{
   .mt{
     margin-top: 18px;
   }
-  .btn-home{
+  .btn-homeconv{
     width: 300px;
     font-size: 16px;
   }
@@ -741,7 +741,7 @@ h2{
   overflow: scroll;
   color: #919191;
   background: #fff;  
-  z-index: 100;
+  z-index: 1031;
   transform: translateX(110%);
   transition: transform 0.5s ease;
 }
@@ -831,7 +831,7 @@ h2{
   font-weight: 700;
   text-align: center;
 }
-.top{
+.ctop{
   margin-top: -60px;
 }
 .fecha-limite{
@@ -1056,7 +1056,7 @@ h2{
   .mes{
     font-size: 25px;
   }
-  .top{
+  .ctop{
     margin-top: -40px;
   }
   .text-header{
