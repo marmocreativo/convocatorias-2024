@@ -727,6 +727,7 @@ h2{
   .border-buttom-registro{
     margin-top: -3px;
   }
+  
  }
 
 
@@ -1118,3 +1119,12 @@ button.btn-close {
   justify-content: center;
   height: 70vh;
 }
+
+@media (max-width: 575.98px) { 
+  button.btn-close {
+   
+    position: absolute;
+    right: -20px;
+    top: 30px;
+  }
+ }
