@@ -353,7 +353,7 @@
                    <article> <h4 class="titulo-registro text-center">Registro de aspirantes</h4>
                     <p class="fecha-registro">15 al 26 de enero.</p></article>
                     <div class="my-3 text-md-center">
-                        <a href="http://registro.prepaenlinea.sep.gob.mx/registro/public/index.php/preregistro/estatus" target="_blank" class="btnf btn-flip" data-back="del 15 al 24 de enero" data-front="Registrate aquí">
+                        <a href="http://registro.prepaenlinea.sep.gob.mx/registro/public/index.php/preregistro/estatus" target="_blank" class="btnf btn-flip" data-back="del 15 al 26 de enero" data-front="Registrate aquí">
                             <span class='line-1'></span>
                             <span class='line-2'></span>
                             <span class='line-3'></span>
@@ -1270,5 +1270,17 @@
         jQuery(this).toggleClass("open");
 });
 </script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+      // Verificar si la URL contiene #medios
+      if (window.location.href.indexOf("#medios") !== -1) {
+        // Obtener el elemento con ID #mediosBtn y hacer clic en él
+        var menuBtn = document.getElementById('menuBtn');
+        if (menuBtn) {
+          menuBtn.click();
+        }
+      }
+    });
+  </script>
 </body>
 </html>
