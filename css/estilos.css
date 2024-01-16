@@ -1117,6 +1117,29 @@ button.btn-close {
   height: 70vh;
 }
 
+.btn-gris {
+  width: 100%;
+  color: #919191;
+  border: 1px solid #919191;
+  background-color: #fff;
+  font-size: 18px;
+  border-radius: 0;
+}
+
+.btn-gris:hover{
+  color: #fff;
+  border: 1px solid #fff;
+  background-color: #919191;
+}
+.btn-gris i.fas{
+  font-size: 18px;
+}
+.btn-gris i{
+  color: #919191;
+}
+.btn-gris:hover i{
+  color: #fff;
+}
 @media (max-width: 575.98px) { 
   button.btn-close {
    
