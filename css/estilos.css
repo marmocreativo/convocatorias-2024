@@ -227,14 +227,12 @@ h2{
 
 
 .btn-footer{
-  font-size: 38px;
+  font-size: 28px;
   font-weight: 700;
   cursor: pointer;
   transition: all 0.25s ease;
   outline: none;
-  height: 45px;
   text-align: center;
-  height: 80px;
   display: inline-block;
   padding: 10px 30px;
   text-decoration: none;
@@ -288,7 +286,6 @@ h2{
   border-right: 1px solid #D9D9D9;
   border-bottom: 3px solid #49B6D5;
   color: #49B6D5;
-  height: auto;
 }
 .btn-ayu:hover{
   background-position: right bottom;
