@@ -9,13 +9,12 @@ h1{
     font-weight: 300;
     color: #919191;
     font-style: normal;
-    font-family: "Montserrat", sans-serif;
 }
 h2{
   text-align: center;
   font-size: 40px;
+  color: #919191;
   font-weight: 400;
-  font-family: "Montserrat", sans-serif;
 }
 .text-header{
     font-size: 19px;
@@ -23,7 +22,7 @@ h2{
     color: #919191;
     font-style: normal;
     text-align: right;
-    font-family: "Montserrat", sans-serif;
+    
 }
 .border-header{
     border-top: 1px solid #9E9E9E;
@@ -59,7 +58,7 @@ h2{
   margin: 5px;
 }   
 .titulo-registro{
-    font-family: "Montserrat", sans-serif;
+    
     font-size: 43px;
     font-weight: 700;
     background: linear-gradient(90deg, #0074CA 34.6%, #00C7F8 65.32%);
@@ -73,7 +72,7 @@ h2{
   text-align: center;
   font-size: 24px;
   font-weight: 300;
-  font-family: "Montserrat", sans-serif;
+  
 }
 .border-buttom-registro{
   margin-top: -13px;
@@ -91,7 +90,7 @@ h2{
     font-size: 80px;
     font-weight: 700;
     text-align: center;
-    font-family: "Montserrat", sans-serif;
+    
     line-height: 80px;
     margin-top: 15px;
 }
@@ -102,7 +101,7 @@ h2{
   padding: 10px 15px;
   position: relative;
   cursor: pointer;
-  font-family: "Montserrat", sans-serif;
+  
   /* button */
   /* bg button */
 }
@@ -199,7 +198,7 @@ h2{
   font-weight: 700;
   cursor: pointer;
   transition: all 0.25s ease;
-  font-family: "Montserrat", sans-serif;
+  
 }
 
 .btn-homeconv:hover{
@@ -234,9 +233,9 @@ h2{
   outline: none;
   text-align: center;
   display: inline-block;
-  padding: 10px 30px;
+  padding: 10px 0;
   text-decoration: none;
-  font-family: "Montserrat", sans-serif;
+  width: 100%;
 }
 
 
@@ -724,7 +723,11 @@ h2{
   .border-buttom-registro{
     margin-top: -3px;
   }
-  
+  .text-proceso{
+    padding: 0 1.8em;
+    font-size: 20px;
+  }
+
  }
 
 
@@ -945,29 +948,17 @@ h2{
   border: 1px solid #0074CA;
 
 }
-    /* btn compartir  */
-    i.c {
-      opacity: 0;
-      font-size: 28px;
-      color: #fff;
-      will-change: transform;
-      -webkit-transition: all .3s ease;
-      transition: all .3s ease;
-      padding: 0 10px;
-  }
-  .container-mv{
-    background-color: #0074CA;
-    text-align: center;
-  }
-  .container-mv i.c {
-    opacity: 1;
+/* btn compartir  */
+  i.c {
+    opacity: 0;
     font-size: 28px;
     color: #fff;
     will-change: transform;
     -webkit-transition: all .3s ease;
     transition: all .3s ease;
-    padding: 8px 10px;
-}
+    padding: 0 40px;
+  }
+
   .btn_wrap {
     margin: 10px 0;
     position: relative;
@@ -1069,6 +1060,12 @@ h2{
   }
   .text-header{
     text-align: center;
+  }
+  span.compartir-rs {
+   opacity: 0;
+  } 
+  i.c{
+    opacity: 1;
   }
  }
 
