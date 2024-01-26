@@ -1,3 +1,4 @@
+:root
 
 body{
     background-color: #fff;
@@ -51,10 +52,16 @@ h2{
   border-top: 1px  solid #D9D9D9;
   margin: 5px;
 }
-.border-sigue-active{
+.one .border-sigue-active{
   border-left: 2px  solid #E7D842;
   border-right: 2px  solid #E7D842;
   border-top: 2px  solid #E7D842;
+  margin: 5px;
+}   
+.two .border-sigue-active{
+  border-left: 2px  solid #FF9E1F;
+  border-right: 2px  solid #FF9E1F;
+  border-top: 2px  solid #FF9E1F;
   margin: 5px;
 }   
 .titulo-registro{
@@ -178,9 +185,94 @@ h2{
   transform: translate(-33px) rotate(45deg);
 }
 
+/* thema two */
+.two .button-reg {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  position: relative;
+  cursor: pointer;
+  
+  /* button */
+  /* bg button */
+}
+.two .button-reg .link {
+  background-color: transparent;
+  font-size: 25px;
+  color: #919191;
+  font-weight: 300;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  border: 0;
+  padding-left: 20px;
+  left: 0;
+  line-height: auto;
+  overflow: hidden;
+  text-decoration: none;
+  /*line*/
+  /*arrow*/
+}
+.two .button-reg .link:before {
+  content: "";
+  background-color: #FF3D9D;
+  width: 3px;
+  height: 90%;
+  position: absolute;
+  z-index: 2;
+  left: 0px;
+  top: 0px;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+.two .button-reg .link:after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  position: absolute;
+  border: solid 3px #FF3D9D;
+  border-left: 0;
+  border-bottom: 0;
+  top: calc(50% - 9px);
+  border-radius: 2px;
+  transform: translateX(-42px) rotate(45deg);
+  transition: all 0.3s 0.2s ease-in-out;
+}
+.two .button-reg:before {
+  content: "";
+  background-color: #EBEBEB;
+  width: 0;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0px;
+  border-radius: 3px;
+  transition: all 0.4s 0.3s ease-in-out;
+}
+.two .button-reg:hover:before {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 0px;
+}
+.two .button-reg:hover .link {
+  padding-left: 50px;
+}
+.two .button-reg:hover .link:before {
+  left: 16px;
+  transform: rotate(90deg);
+}
+.two .button-reg:hover .link:after {
+  transform: translate(-33px) rotate(45deg);
+}
 
+/* thema two */
 
-.btn-homeconv{
+/* thema one */
+.one .btn-homeconv{
   outline: none;
   height: 45px;
   text-align: center;
@@ -201,27 +293,217 @@ h2{
   
 }
 
-.btn-homeconv:hover{
+.one .btn-homeconv:hover{
   background-position: right bottom;
   border-bottom: 3px solid #FF9E1F;
   color: #fff;
 }
 
-.btn-off{
-  background: linear-gradient(to bottom, transparent 50%, #D9D9D9 50%);
+
+.one .btn-homeconv-one{
+  outline: none;
+  height: 45px;
+  text-align: center;
+  width: 330px;
+  border-radius: 3px;
+  background: linear-gradient(to bottom, transparent 50%, #66E88A 50%);
   background-size: 100% 200%;
   background-position: left top;
   border-top: 1px solid #D9D9D9;
   border-left: 1px solid #D9D9D9;
   border-right: 1px solid #D9D9D9;
-  border-bottom: 3px solid #D9D9D9;
-  color: #D9D9D9;
-  cursor: none;
+  border-bottom: 3px solid #66E88A;
+  color: #66E88A;
+  font-size: 19px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  
+}
+
+.one .btn-homeconv-one{
+  background-position: right bottom;
+  border-bottom: 3px solid #66E88A;
+  color: #fff;
+}
+.one .btn-homeconv-two{
+  outline: none;
+  height: 45px;
+  text-align: center;
+  width: 330px;
+  border-radius: 3px;
+  background: linear-gradient(to bottom, transparent 50%, #E07EF8 50%);
+  background-size: 100% 200%;
+  background-position: left top;
+  border-top: 1px solid #D9D9D9;
+  border-left: 1px solid #D9D9D9;
+  border-right: 1px solid #D9D9D9;
+  border-bottom: 3px solid #E07EF8;
+  color: #E07EF8;
+  font-size: 19px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  
+}
+
+.one .btn-homeconv-two:hover{
+  background-position: right bottom;
+  border-bottom: 3px solid #E07EF8;
+  color: #fff;
+}
+.one .btn-homeconv-three{
+  outline: none;
+  height: 45px;
+  text-align: center;
+  width: 330px;
+  border-radius: 3px;
+  background: linear-gradient(to bottom, transparent 50%, #E7D842 50%);
+  background-size: 100% 200%;
+  background-position: left top;
+  border-top: 1px solid #D9D9D9;
+  border-left: 1px solid #D9D9D9;
+  border-right: 1px solid #D9D9D9;
+  border-bottom: 3px solid #E7D842;
+  color: #E7D842;
+  font-size: 19px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  
+}
+
+.one .btn-homeconv-three:hover{
+  background-position: right bottom;
+  border-bottom: 3px solid #E7D842;
+  color: #fff;
+}
+/* thema one */
+
+/* thema two */
+
+.two .btn-homeconv{
+  outline: none;
+  height: 45px;
+  text-align: center;
+  width: 330px;
+  border-radius: 3px;
+  background: linear-gradient(to bottom, transparent 50%, #FF3D9D 50%);
+  background-size: 100% 200%;
+  background-position: left top;
+  border-top: 1px solid #D9D9D9;
+  border-left: 1px solid #D9D9D9;
+  border-right: 1px solid #D9D9D9;
+  border-bottom: 3px solid #FF3D9D;
+  color: #FF3D9D;
+  font-size: 19px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  
+}
+
+.two .btn-homeconv:hover{
+  background-position: right bottom;
+  border-bottom: 3px solid #FF3D9D;
+  color: #fff;
+}
+
+.two .btn-homeconv-one{
+  outline: none;
+  height: 45px;
+  text-align: center;
+  width: 330px;
+  border-radius: 3px;
+  background: linear-gradient(to bottom, transparent 50%, #E07EF8 50%);
+  background-size: 100% 200%;
+  background-position: left top;
+  border-top: 1px solid #D9D9D9;
+  border-left: 1px solid #D9D9D9;
+  border-right: 1px solid #D9D9D9;
+  border-bottom: 3px solid #E07EF8;
+  color: #E07EF8;
+  font-size: 19px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  
+}
+
+.two .btn-homeconv-one:hover{
+  background-position: right bottom;
+  border-bottom: 3px solid #E07EF8;
+  color: #fff;
+}
+.two .btn-homeconv-two{
+  outline: none;
+  height: 45px;
+  text-align: center;
+  width: 330px;
+  border-radius: 3px;
+  background: linear-gradient(to bottom, transparent 50%, #E7D842 50%);
+  background-size: 100% 200%;
+  background-position: left top;
+  border-top: 1px solid #D9D9D9;
+  border-left: 1px solid #D9D9D9;
+  border-right: 1px solid #D9D9D9;
+  border-bottom: 3px solid #E7D842;
+  color: #E7D842;
+  font-size: 19px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  
+}
+
+.two .btn-homeconv-two:hover{
+  background-position: right bottom;
+  border-bottom: 3px solid #E7D842;
+  color: #fff;
+}
+.two .btn-homeconv-three{
+  outline: none;
+  height: 45px;
+  text-align: center;
+  width: 330px;
+  border-radius: 3px;
+  background: linear-gradient(to bottom, transparent 50%, #FF9E1F 50%);
+  background-size: 100% 200%;
+  background-position: left top;
+  border-top: 1px solid #D9D9D9;
+  border-left: 1px solid #D9D9D9;
+  border-right: 1px solid #D9D9D9;
+  border-bottom: 3px solid #FF9E1F;
+  color: #FF9E1F;
+  font-size: 19px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  
+}
+
+.two .btn-homeconv-three:hover{
+  background-position: right bottom;
+  border-bottom: 3px solid #FF9E1F;
+  color: #fff;
+}
+/* thema two */
+
+.btn-off{
+  background: linear-gradient(to bottom, transparent 50%, #D9D9D9 50%)!important;
+  background-size: 100% 200%!important;
+  background-position: left top!important;
+  border-top: 1px solid #D9D9D9!important;
+  border-left: 1px solid #D9D9D9!important;
+  border-right: 1px solid #D9D9D9!important;
+  border-bottom: 3px solid #D9D9D9!important;
+  color: #D9D9D9!important;
+  cursor: none!important;
 }
 .btn-off:hover{
-  background-position: right bottom;
-  border-bottom: 3px solid #D9D9D9;
-  color: #919191;
+  background-position: right bottom!important;
+  border-bottom: 3px solid #D9D9D9!important;
+  color: #919191!important;
 }
 
 
@@ -239,7 +521,8 @@ h2{
 }
 
 
-.btn-cal{
+/* thema one */
+.one .btn-cal{
   color:#FF9E1F!important;
   border-radius: 3px;
   background: linear-gradient(to bottom, transparent 50%, #FF9E1F 50%);
@@ -252,12 +535,12 @@ h2{
   color: #FF9E1F;
 }
 
-.btn-cal:hover{
+.one .btn-cal:hover{
   background-position: right bottom;
   border-bottom: 3px solid #FF9E1F;
   color: #fff!important;
 }
-.btn-hab{
+.one .btn-hab{
   color:#E5E542!important; 
   border-radius: 3px;
   background: linear-gradient(to bottom, transparent 50%, #E5E542 50%);
@@ -269,12 +552,12 @@ h2{
   border-bottom: 3px solid #E5E542;
   color: #E5E542;
 }
-.btn-hab:hover{
+.one .btn-hab:hover{
   background-position: right bottom;
   border-bottom: 3px solid #E5E542;
   color: #fff!important;
 }
-.btn-ayu{
+.one .btn-ayu{
   color:#49B6D5!important;
   border-radius: 3px;
   background: linear-gradient(to bottom, transparent 50%, #49B6D5 50%);
@@ -286,11 +569,66 @@ h2{
   border-bottom: 3px solid #49B6D5;
   color: #49B6D5;
 }
-.btn-ayu:hover{
+.one .btn-ayu:hover{
   background-position: right bottom;
   border-bottom: 3px solid #49B6D5;
   color: #fff!important;
 }
+/* thema one */
+/* thema two */
+.two .btn-cal{
+  color:#FF3D9D!important;
+  border-radius: 3px;
+  background: linear-gradient(to bottom, transparent 50%, #FF3D9D 50%);
+  background-size: 100% 200%;
+  background-position: left top;
+  border-top: 1px solid #D9D9D9;
+  border-left: 1px solid #D9D9D9;
+  border-right: 1px solid #D9D9D9;
+  border-bottom: 3px solid #FF3D9D;
+
+}
+
+.two .btn-cal:hover{
+  background-position: right bottom;
+  border-bottom: 3px solid #FF3D9D;
+  color: #fff!important;
+}
+.two .btn-hab{
+  color:#D2B0FC!important; 
+  border-radius: 3px;
+  background: linear-gradient(to bottom, transparent 50%, #D2B0FC 50%);
+  background-size: 100% 200%;
+  background-position: left top;
+  border-top: 1px solid #D9D9D9;
+  border-left: 1px solid #D9D9D9;
+  border-right: 1px solid #D9D9D9;
+  border-bottom: 3px solid #D2B0FC;
+
+}
+.two .btn-hab:hover{
+  background-position: right bottom;
+  border-bottom: 3px solid #D2B0FC;
+  color: #fff!important;
+}
+.two .btn-ayu{
+  color:#49B6D5!important;
+  border-radius: 3px;
+  background: linear-gradient(to bottom, transparent 50%, #49B6D5 50%);
+  background-size: 100% 200%;
+  background-position: left top;
+  border-top: 1px solid #D9D9D9;
+  border-left: 1px solid #D9D9D9;
+  border-right: 1px solid #D9D9D9;
+  border-bottom: 3px solid #49B6D5;
+  color: #49B6D5;
+}
+.two .btn-ayu:hover{
+  background-position: right bottom;
+  border-bottom: 3px solid #49B6D5;
+  color: #fff!important;
+}
+/* thema two */
 
 /* boton de registro */
 .btn-flip {
