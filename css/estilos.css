@@ -1073,13 +1073,21 @@ h2{
 .aviso span{
   font-weight: 700;
 }
-.barras{
+.one .barras{
   width: 5px;
   height: 51px;
   color: #FF9E1F;
   background: #FF9E1F;
   padding: 15px 0px;
 }
+.two .barras{
+  width: 5px;
+  height: 51px;
+  color: #FF3D9D;
+  background: #FF3D9D;
+  padding: 15px 0px;
+}
+
 .border-media{
   border: 1px solid #D9D9D9;
 }
@@ -1098,7 +1106,7 @@ h2{
   opacity: 1;
   margin: 16px auto;
 }
-.btn-media{
+.one .btn-media{
   border: 1px solid #D9D9D9;
   border-radius: 1px;
   color: #FF9E1F;
@@ -1109,12 +1117,28 @@ h2{
   line-height: 18px;
   text-align: center;
 }
-.btn-media span{
+.one .btn-media span{
   display: inline-block;
   vertical-align: middle;
   text-align: left;
 }
-.btn-download{
+.two .btn-media {
+  border: 1px solid #D9D9D9;
+  border-radius: 1px;
+  color: #FF3D9D;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 10px 15px;
+  width: 100%;
+  line-height: 18px;
+  text-align: center;
+}
+.two .btn-media span{
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+}
+.one .btn-download{
   border: 1px solid #D9D9D9;
   border-radius: 1px;
   color: #FF9E1F;
@@ -1126,12 +1150,28 @@ h2{
   text-align: center;
 }
 
-.btn-download span{
+.one .btn-download span{
   display: inline-block;
   vertical-align: middle;
   text-align: left;
 }
+.two .btn-download{
+  border: 1px solid #D9D9D9;
+  border-radius: 1px;
+  color: #FF3D9D;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 10px 15px;
+  width: 100%;
+  line-height: 18px;
+  text-align: center;
+}
 
+.two .btn-download span{
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+}
 .txt-spot{
   font-size: 30px;
   font-weight: 700;
