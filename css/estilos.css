@@ -53,15 +53,15 @@ h2{
   margin: 5px;
 }
 .one .border-sigue-active{
-  border-left: 2px  solid #E7D842;
-  border-right: 2px  solid #E7D842;
-  border-top: 2px  solid #E7D842;
-  margin: 5px;
-}   
-.two .border-sigue-active{
   border-left: 2px  solid #FF9E1F;
   border-right: 2px  solid #FF9E1F;
   border-top: 2px  solid #FF9E1F;
+  margin: 5px;
+}   
+.two .border-sigue-active{
+  border-left: 2px  solid #E07EF8;
+  border-right: 2px  solid #E07EF8;
+  border-top: 2px  solid #E07EF8;
   margin: 5px;
 }   
 .titulo-registro{
@@ -293,40 +293,14 @@ h2{
   
 }
 
-.one .btn-homeconv:hover{
+.two .btn-homeconv:hover{
   background-position: right bottom;
-  border-bottom: 3px solid #FF9E1F;
+  border-bottom: 3px solid #E07EF8;
   color: #fff;
 }
-
-
-.one .btn-homeconv-one{
-  outline: none;
-  height: 45px;
-  text-align: center;
-  width: 330px;
-  border-radius: 3px;
-  background: linear-gradient(to bottom, transparent 50%, #66E88A 50%);
-  background-size: 100% 200%;
-  background-position: left top;
-  border-top: 1px solid #D9D9D9;
-  border-left: 1px solid #D9D9D9;
-  border-right: 1px solid #D9D9D9;
-  border-bottom: 3px solid #66E88A;
-  color: #66E88A;
-  font-size: 19px;
-  font-weight: 700;
-  cursor: pointer;
-  transition: all 0.25s ease;
-  
-}
-
-.one .btn-homeconv-one{
-  background-position: right bottom;
-  border-bottom: 3px solid #66E88A;
-  color: #fff;
-}
-.one .btn-homeconv-two{
+/* thema one */
+/* thema two */
+.two .btn-homeconv{
   outline: none;
   height: 45px;
   text-align: center;
@@ -340,62 +314,6 @@ h2{
   border-right: 1px solid #D9D9D9;
   border-bottom: 3px solid #E07EF8;
   color: #E07EF8;
-  font-size: 19px;
-  font-weight: 700;
-  cursor: pointer;
-  transition: all 0.25s ease;
-  
-}
-
-.one .btn-homeconv-two:hover{
-  background-position: right bottom;
-  border-bottom: 3px solid #E07EF8;
-  color: #fff;
-}
-.one .btn-homeconv-three{
-  outline: none;
-  height: 45px;
-  text-align: center;
-  width: 330px;
-  border-radius: 3px;
-  background: linear-gradient(to bottom, transparent 50%, #E7D842 50%);
-  background-size: 100% 200%;
-  background-position: left top;
-  border-top: 1px solid #D9D9D9;
-  border-left: 1px solid #D9D9D9;
-  border-right: 1px solid #D9D9D9;
-  border-bottom: 3px solid #E7D842;
-  color: #E7D842;
-  font-size: 19px;
-  font-weight: 700;
-  cursor: pointer;
-  transition: all 0.25s ease;
-  
-}
-
-.one .btn-homeconv-three:hover{
-  background-position: right bottom;
-  border-bottom: 3px solid #E7D842;
-  color: #fff;
-}
-/* thema one */
-
-/* thema two */
-
-.two .btn-homeconv{
-  outline: none;
-  height: 45px;
-  text-align: center;
-  width: 330px;
-  border-radius: 3px;
-  background: linear-gradient(to bottom, transparent 50%, #FF3D9D 50%);
-  background-size: 100% 200%;
-  background-position: left top;
-  border-top: 1px solid #D9D9D9;
-  border-left: 1px solid #D9D9D9;
-  border-right: 1px solid #D9D9D9;
-  border-bottom: 3px solid #FF3D9D;
-  color: #FF3D9D;
   font-size: 19px;
   font-weight: 700;
   cursor: pointer;
@@ -405,89 +323,38 @@ h2{
 
 .two .btn-homeconv:hover{
   background-position: right bottom;
-  border-bottom: 3px solid #FF3D9D;
-  color: #fff;
-}
-
-.two .btn-homeconv-one{
-  outline: none;
-  height: 45px;
-  text-align: center;
-  width: 330px;
-  border-radius: 3px;
-  background: linear-gradient(to bottom, transparent 50%, #E07EF8 50%);
-  background-size: 100% 200%;
-  background-position: left top;
-  border-top: 1px solid #D9D9D9;
-  border-left: 1px solid #D9D9D9;
-  border-right: 1px solid #D9D9D9;
   border-bottom: 3px solid #E07EF8;
-  color: #E07EF8;
-  font-size: 19px;
-  font-weight: 700;
-  cursor: pointer;
-  transition: all 0.25s ease;
-  
-}
-
-.two .btn-homeconv-one:hover{
-  background-position: right bottom;
-  border-bottom: 3px solid #E07EF8;
-  color: #fff;
-}
-.two .btn-homeconv-two{
-  outline: none;
-  height: 45px;
-  text-align: center;
-  width: 330px;
-  border-radius: 3px;
-  background: linear-gradient(to bottom, transparent 50%, #E7D842 50%);
-  background-size: 100% 200%;
-  background-position: left top;
-  border-top: 1px solid #D9D9D9;
-  border-left: 1px solid #D9D9D9;
-  border-right: 1px solid #D9D9D9;
-  border-bottom: 3px solid #E7D842;
-  color: #E7D842;
-  font-size: 19px;
-  font-weight: 700;
-  cursor: pointer;
-  transition: all 0.25s ease;
-  
-}
-
-.two .btn-homeconv-two:hover{
-  background-position: right bottom;
-  border-bottom: 3px solid #E7D842;
-  color: #fff;
-}
-.two .btn-homeconv-three{
-  outline: none;
-  height: 45px;
-  text-align: center;
-  width: 330px;
-  border-radius: 3px;
-  background: linear-gradient(to bottom, transparent 50%, #FF9E1F 50%);
-  background-size: 100% 200%;
-  background-position: left top;
-  border-top: 1px solid #D9D9D9;
-  border-left: 1px solid #D9D9D9;
-  border-right: 1px solid #D9D9D9;
-  border-bottom: 3px solid #FF9E1F;
-  color: #FF9E1F;
-  font-size: 19px;
-  font-weight: 700;
-  cursor: pointer;
-  transition: all 0.25s ease;
-  
-}
-
-.two .btn-homeconv-three:hover{
-  background-position: right bottom;
-  border-bottom: 3px solid #FF9E1F;
   color: #fff;
 }
 /* thema two */
+/* thema three */
+.three .btn-homeconv{
+  outline: none;
+  height: 45px;
+  text-align: center;
+  width: 330px;
+  border-radius: 3px;
+  background: linear-gradient(to bottom, transparent 50%, #00AC3D 50%);
+  background-size: 100% 200%;
+  background-position: left top;
+  border-top: 1px solid #D9D9D9;
+  border-left: 1px solid #D9D9D9;
+  border-right: 1px solid #D9D9D9;
+  border-bottom: 3px solid #00AC3D;
+  color: #00AC3D;
+  font-size: 19px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  
+}
+
+.three .btn-homeconv:hover{
+  background-position: right bottom;
+  border-bottom: 3px solid #00AC3D;
+  color: #fff;
+}
+/* thema three */
 
 .btn-off{
   background: linear-gradient(to bottom, transparent 50%, #D9D9D9 50%)!important;
