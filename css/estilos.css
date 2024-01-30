@@ -1018,6 +1018,7 @@ h2{
 .titulo-media{
   margin-top: 1em;
   font-size: 73px;
+  line-height: 73px;
   font-style: normal;
   font-weight: 300;
   text-align: center;
@@ -1392,4 +1393,5 @@ button.btn-close {
   #compartir, #descargar{
     cursor: pointer;
   }
+  
  }

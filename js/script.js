@@ -17,8 +17,8 @@ jQuery( ".arrow-icon" ).click(function() {
 if (window.matchMedia("(max-width: 575.98px)").matches) {
   document.getElementById("compartir").setAttribute("data-bs-toggle", "collapse");
   document.getElementById("compartir").setAttribute("data-bs-target","#collapseCompartir");
-  document.getElementById("descargar").setAttribute("data-bs-toggle", "collapse");
-  document.getElementById("descargar").setAttribute("data-bs-target","#collapseDescargar");
+  document.getElementById("descargarmedia").setAttribute("data-bs-toggle", "collapse");
+  document.getElementById("descargarmedia").setAttribute("data-bs-target","#collapseDescargar");
   document.getElementById("collapseCompartir").setAttribute("class","collapse")
   document.getElementById("collapseDescargar").setAttribute("class","collapse")
 
@@ -27,8 +27,8 @@ if (window.matchMedia("(max-width: 575.98px)").matches) {
   document.getElementById("compartir").removeAttribute("data-bs-target");
   document.getElementById("collapseCompartir").removeAttribute("class");
 
-  document.getElementById("descargar").removeAttribute("data-bs-toggle");
-  document.getElementById("descargar").removeAttribute("data-bs-target");
+  document.getElementById("descargarmedia").removeAttribute("data-bs-toggle");
+  document.getElementById("descargarmedia").removeAttribute("data-bs-target");
   document.getElementById("collapseDescargar").removeAttribute("class");
 }
 
