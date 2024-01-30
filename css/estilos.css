@@ -1389,4 +1389,7 @@ button.btn-close {
     right: -20px;
     top: 30px;
   }
+  #compartir, #descargar{
+    cursor: pointer;
+  }
  }
