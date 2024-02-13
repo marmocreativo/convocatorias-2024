@@ -1394,4 +1394,11 @@ button.btn-close {
     cursor: pointer;
   }
   
- }
+}
+.btn-scale{
+  transition: all 0.3s ease-out; 
+}
+.btn-scale:hover{
+  transform: scale(0.93);
+  transition: all 0.3s ease-out; 
+}
