@@ -21,6 +21,8 @@ if (window.matchMedia("(max-width: 575.98px)").matches) {
   document.getElementById("descargarmedia").setAttribute("data-bs-target","#collapseDescargar");
   document.getElementById("collapseCompartir").setAttribute("class","collapse")
   document.getElementById("collapseDescargar").setAttribute("class","collapse")
+  document.getElementById("compartir").setAttribute("class","dropdown-toggle")
+  document.getElementById("descargarmedia").setAttribute("class","dropdown-toggle")
 
 } else { 
   document.getElementById("compartir").removeAttribute("data-bs-toggle");
