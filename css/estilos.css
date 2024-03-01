@@ -1134,10 +1134,12 @@ h2{
 
 .menu-medios {
   position: fixed;
-  right: 0px;
+  right: -4px;
   top: 22vh;
 }
-
+img.btn-medios {
+  width: 55px;
+}
 .fas {
   font-size: 2rem;
   color: #222;
