@@ -1390,7 +1390,7 @@ img.btn-medios {
     will-change: transform;
     -webkit-transition: all .3s ease;
     transition: all .3s ease;
-    padding: 0 40px;
+    padding: 0 20px;
   }
 
   .btn_wrap {
