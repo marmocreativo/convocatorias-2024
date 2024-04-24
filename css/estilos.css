@@ -1607,3 +1607,8 @@ button.btn-close {
   transform: scale(0.93);
   transition: all 0.3s ease-out; 
 }
+
+
+.btn-sma{
+  padding: 0px;
+}
