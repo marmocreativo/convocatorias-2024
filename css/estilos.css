@@ -1611,4 +1611,5 @@ button.btn-close {
 
 .btn-sma{
   padding: 0px;
+  max-width: 480px;
 }
