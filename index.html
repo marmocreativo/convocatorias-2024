@@ -496,13 +496,21 @@
     <section class="section-w"></section>
 <!-- header -->
     <div class="container">
-        <div class="row g-0 mb-5 border-header">
+        <div class="row g-0 mb-4 border-header">
             <div class=" i-izq"><img class="rounded float-start" src="img/s3-l-i.png" alt="izquierda"></div>
             <div class="col-11 col-md m-top" ><h1><h1>Convocatorias 2024 <br>Prepa en Línea-SEP</h1></h1></div>
             <div class="col-11 col-md-8 m-top mt">
                 <p class="text-header">Prepa en Línea-SEP es un servicio gratuito dirigido a personas mexicanas que cuenten con certificado de secundaria y a personas extranjeras con estancia legal en México, que deseen cursar estudios de bachillerato en línea, sin importar su edad o lugar de residencia.</p>
             </div>
             <div class=" i-der"><img class="rounded float-end" src="img/s3-l-d.png" alt="derecha"></div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6 text-center mb-3">
+                <a class="btn btn-home-header " id="ver-requisitos" data-bs-toggle="modal" data-bs-target="#requisitos">Requisitos</a>
+            </div>
+            <div class="col-12 col-md-6 text-center mb-3">
+                <a class="btn btn-home-header " id="ver-requerimientos" data-bs-toggle="modal" data-bs-target="#requerimientos">Requerimientos</a>
+            </div>
         </div>
     </div>
 
@@ -515,14 +523,10 @@
                     <img src="img/identidadg67.webp" alt="65" class="img-fluid" width="360">
                 </div>
                 <div class="col-12 col-md-3">
-                    <p>
-                        <div class="button-reg"> 
-                            <a id="ver-requisitos" data-bs-toggle="modal" data-bs-target="#requisitos" class="link">Requisitos</a>
-                        </div>
-                    </p>
+                    
                     <p>
                         <div class="button-reg">
-                            <a id="ver-requisitos" data-bs-toggle="modal" data-bs-target="#bases" class="link">Bases</a>                        
+                            <a id="ver-bases" data-bs-toggle="modal" data-bs-target="#bases" class="link">Bases</a>                        
                         </div>
                     </p>
                     <p>
@@ -763,7 +767,7 @@
                                 
                                 <p class="text-proceso">del 29 de mayo <br> al 2 de junio</p>
                                 <p class="col text-center">
-                                    <a  class="btn btn-homeconv btn-off" href="#">Obtén tus claves de acceso</a>
+                                    <a  class="btn btn-homeconv" href="http://registro.prepaenlinea.sep.gob.mx/registro/public/index.php/estatus_prope" target="_blank">Obtén tus claves de acceso</a>
                                 </p>
                     
 <!-- collapse -->
@@ -1224,34 +1228,24 @@
                 <div class="modal-body">
                     <div class="container fluid">
                         <div class="row justify-content-center mt-4">
-                            <p>Para participar en la convocatoria como aspirante de Prepa en Línea-SEP, deberás cumplir con los
-                                siguientes requisitos:</p>
+                            <p>Para participar en la convocatoria como aspirante de Prepa en Línea-SEP, debes cumplir con estos requisitos:</p>
                             <ul>
                                 <li style="list-style-type: none;">
                                     <ul>
-                                        <li aria-level="1"><span style="font-weight: 400;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">Tener nacionalidad mexicana. En caso de ser una persona extranjera, deberás tener una estancia legal en México y contar con la Clave Única de Registro de Población.</span></span></span></li>
-                                        <li  aria-level="1"><span style="font-weight: 400;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">Contar con el
-                                                certificado de
-                                                secundaria o la resolución de equivalencia correspondiente.&nbsp;</span></span></span></li>
-                                        <li aria-level="1"><span style="font-weight: 400;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">Contar con dos correos
-                                                electrónicos
-                                                válidos, personales e intransferibles, que no hayan sido utilizados por otros estudiantes en
-                                                convocatorias
-                                                previas y se mantengan activos durante todo el proceso, ya que </span></span></span><b><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">no se podrán modificar
-                                                durante el
-                                                periodo de registro</span></span></b><span style="font-weight: 400;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"> y emisión de
-                                                resultados.</span></span></span></li>
+                                        <li>Tener nacionalidad mexicana. Si eres extranjero, debes demostrar tu estancia legal en México.</li>
+                                        <li>Contar con certificado de secundaria o la equivalencia correspondiente.</li>
+                                        <li>Tener dos correos electrónicos válidos, personales e intransferibles, que no hayan sido utilizados en convocatorias anteriores y que se mantengan activos durante todo el proceso. Estos correos <strong>no podrán ser modificados durante el registro</strong> y la emisión de resultados.</li>
                                     </ul>
                                 </li>
                             </ul>
-                            <p>De la misma forma, será necesario que tengas los siguientes documentos para completar tu registro:</p>
+                            <p>Además, necesitarás los siguientes documentos para completar tu registro:</p>
                             <div class="row">
                                 <div class="col-12 col-md-6">
                                     <p class="text-center"><b>Ejemplos de CURP:</b> </p>
                     
                                     <p class="text-center"><img src="img/Ejemplos-CURP.webp" alt="curp" class="img-fluid"></p>
-                                    </div>
-                                    <div class="col-12 col-md-6">
+                                </div>
+                                <div class="col-12 col-md-6">
                                     <p class="text-center"> <b>Ejemplos de acta de nacimiento:</b> </p>
                     
                                     <p class="text-center">
@@ -1260,19 +1254,68 @@
                                 </div>
                             </div>
                         </div>
-                
-                        <div class="row justify-content-center my-4">
-                            <div class="col-11">
-                                <h3 class="text-center">Requerimientos tecnológicos:</h3>
-                                <p>Los aspirantes deberán disponer de un equipo de cómputo o dispositivo móvil y acceso a internet; o bien, tener la posibilidad de acudir a espacios con internet o puntos de conectividad en bibliotecas, escuelas, instituciones, lugares públicos, entre otros.</p>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 <!-- Modal requisitos -->
+<!-- Modal requerimientos -->
+<div class="modal fade" id="requerimientos" tabindex="-1" aria-labelledby="requerimientosLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered  modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <img src="img/line-popup-s3.png" alt="linea" class="img-fluid">
+                
+                <div class="titulo-modal">
+                    Requerimientos tecnológicos 
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container fluid">
+                    <div class="row justify-content-center mt-4">
+                        <p>Prepa en Línea-SEP es completamente virtual. Accederás a una plataforma con aulas virtuales que contienen recursos como audios, videos, infografías y lecturas en PDF, además de herramientas de comunicación como foros y mensajero.</p>
+                        <p>Puedes usar dispositivos móviles para acceder a los recursos en cualquier momento y lugar. Toma en cuenta que <strong>algunas actividades requieren programas específicos en computadora</strong> para mejorar la calidad y elaboración de tus trabajos. </p>
+                    </div>
+
+                    <div class="row align-items-center">
+                        <div class="titulo-modal-body my-5">
+                           Tecnológicos 
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <p class="text-center">
+                                <img src="img/1.webp" alt="escritorio" class="img-fluid">
+                            </p>
+                        </div>
+                        <div class="col-12 col-md-6">    
+                            <p class="text-center">
+                                <img src="img/2.webp" wi alt="movil" width="310px" class="img-fluid">
+                            </p>
+                        </div>
+                    </div>
+                    <div class="titulo-modal-body my-5">
+                       Conectividad
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-12 col-md-6">
+                            <img src="img/3.webp" alt="tres" class="img-fluid">
+                        </div>
+                        <div class="col-12 col-md-3 text-center">
+                            <img src="img/4.webp" alt="cuatro" width="150" class="img-fluid">
+                        </div>
+                        <div class="col-12 col-md-3 text-center">
+                            <img src="img/5.webp" alt="cinco" width="150" class="img-fluid">
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal requerimieentos -->
 <!-- Modal bases -->
     <div class="modal fade" id="bases" tabindex="-1" aria-labelledby="requisitosLabel" aria-hidden="true">
         <div class="modal-dialog modal-xl modal-dialog-centered  modal-dialog-scrollable">
