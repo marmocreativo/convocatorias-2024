@@ -14,35 +14,145 @@
             overflow: visible;
         }
         .carousel-caption{
-            top: -60px;
+            top: -70px;
+            right: 0;
+            left: 0;            
         }
+      .carousel-control-prev-icon,
+      .carousel-control-next-icon {
+        height: 100px;
+        width: 100px;
+        outline: #EA5B9B;
+        background-size: 100%, 100%;
+        border-radius: 50%;
+        border: 1px solid #EA5B9B;
+      }
+
+      .carousel-control-next-icon:after
+      {
+        /* content: '▶︎'; */
+        font-size: 55px;
+      }
+
+      .carousel-control-prev-icon:after {
+        /* content: '◀︎'; */
+        font-size: 55px;
+      }
+      .carousel-control-next-icon {
+          background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23EA5B9B'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+      }
+      .carousel-control-prev-icon {
+          background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23EA5B9B'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
+      }
+      .carousel-dark .carousel-control-next-icon, .carousel-dark .carousel-control-prev-icon {
+          filter: none;
+      }
+      .carousel-dark .carousel-indicators [data-bs-target] {
+        background-color: #EA5B9B;
+        
+      }
+
+      .carousel-indicators [data-bs-target] {
+        height: 10px;
+        margin-left: 5px;
+        margin-right: 5px;
+        width: 16px;
+
+      }
+      .carousel-indicators {
+        bottom: 20px;
+        
+      }
+      @media (max-width: 575.98px) { 
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+          width: 55px;
+          height: 55px;
+        }
+        .carousel-indicators {
+        bottom: -10px;
+        
+      }
+      }
+
     </style>
   </head>
   <body>
     <div class="container">
-        <div class="row">
-            <div class="col-8 mt-5">
+        <div class="row justify-content-center">
+            <div class=" col-12 col-md-8 mt-5">
                 <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade carousel-dark" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                    <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                    <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                    <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                  </div>
                     <div class="carousel-inner">
                       <div class="carousel-item active">
-                        <img src="kit-68/MD_bases.png" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>First slide label</h5>
+                        <img src="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2024/06/img_canada.png" class="d-block w-100" alt="Canadá">
+                        <div class="carousel-caption ">
+                            <h5>Canadá</h5>
                             
                           </div>
                       </div>
                       <div class="carousel-item">
-                        <img src="kit-68/MD_guia_registro.png" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Second slide label</h5>
+                        <img src="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2024/06/img_usa_1.png" class="d-block w-100" alt="USA 1">
+                        <div class="carousel-caption ">
+                            <h5>Estados Unidos</h5>
                             
                           </div>
                       </div>
                       <div class="carousel-item">
-                        <img src="kit-68/MD_infografia.png" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>three slide label</h5>
-                            
+                        <img src="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2024/06/img_usa_2.png" class="d-block w-100" alt="USA 2">
+                        <div class="carousel-caption ">
+                            <h5>Estados Unidos</h5>                            
+                          </div>
+                      </div>
+
+                      <div class="carousel-item">
+                        <img src="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2024/06/img_haiti.png" class="d-block w-100" alt="Haití">
+                        <div class="carousel-caption ">
+                            <h5>Haití</h5>                            
+                          </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2024/06/img_CR.png" class="d-block w-100" alt="Costa Rica">
+                        <div class="carousel-caption ">
+                            <h5>Costa Rica</h5>                            
+                          </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2024/06/img_colomnbia.png" class="d-block w-100" alt="Colombia">
+                        <div class="carousel-caption ">
+                            <h5>Colombia</h5>                            
+                          </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2024/06/img-alemania.png" class="d-block w-100" alt="Alemania">
+                        <div class="carousel-caption ">
+                            <h5>Alemania</h5>                            
+                          </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2024/06/img_italia.png" class="d-block w-100" alt="Italia">
+                        <div class="carousel-caption ">
+                            <h5>Italia</h5>                            
+                          </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2024/06/turquia-v.png" class="d-block w-100" alt="Italia">
+                        <div class="text-center">
+                          <a href="https://www.youtube.com/watch?v=dSo9GD6cnh4" target="_blank"><img src="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2024/06/texto-enlace.png" alt="enlace"></a>
+                        </div>
+                        <div class="carousel-caption ">
+                            <h5>Turquía</h5> 
+                                                       
                           </div>
                       </div>
                     </div>
@@ -55,47 +165,651 @@
                       <span class="visually-hidden">Next</span>
                     </button>
                   </div>
-                <!-- <div id="carouselExampleCaptions" class="carousel slide carousel-fade">
-                    <div class="carousel-indicators">
-                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    </div>
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="kit-68/MD_bases.png" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                          <h5>First slide label</h5>
-                          <p>Some representative placeholder content for the first slide.</p>
-                        </div>
-                      </div>
-                      <div class="carousel-item">
-                        <img src="kit-68/MD_guia_registro.png" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                          <h5>Second slide label</h5>
-                          <p>Some representative placeholder content for the second slide.</p>
-                        </div>
-                      </div>
-                      <div class="carousel-item">
-                        <img src="kit-68/MD_bases.png" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                          <h5>Third slide label</h5>
-                          <p>Some representative placeholder content for the third slide.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
-                </div> -->
+                
             </div>
         </div>
     </div>
+<!-- usa -->
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class=" col-12 col-md-8 mt-5">
+          <div id="carouselExampleFadeco" class="carousel slide carousel-fade carousel-dark" >
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleFadeco" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleFadeco" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleFadeco" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleFadeco" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleFadeco" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              <button type="button" data-bs-target="#carouselExampleFadeco" data-bs-slide-to="5" aria-label="Slide 6"></button>
+              <button type="button" data-bs-target="#carouselExampleFadeco" data-bs-slide-to="6" aria-label="Slide 7"></button>
+              <button type="button" data-bs-target="#carouselExampleFadeco" data-bs-slide-to="7" aria-label="Slide 8"></button>
+              <button type="button" data-bs-target="#carouselExampleFadeco" data-bs-slide-to="8" aria-label="Slide 9"></button>
+            </div>
+            <div class="carousel-inner">
+            
+              <div class="carousel-item ">
+                <img src="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2024/06/img_canada.png" class="d-block w-100"
+                  alt="Canadá">
+                <div class="carousel-caption">
+                  <h5>Canadá</h5>
+                </div>
+              </div>
+              <div class="carousel-item ">
+                <img src="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2024/06/img_usa_1.png" class="d-block w-100"
+                  alt="USA 1">
+                <div class="carousel-caption ">
+                  <h5>Estados Unidos</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2024/06/img_usa_2.png" class="d-block w-100"
+                  alt="USA 2">
+                <div class="carousel-caption ">
+                  <h5>Estados Unidos</h5>
+                </div>
+              </div>
+              <div class="carousel-item ">
+                <img src="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2024/06/img_haiti.png" class="d-block w-100"
+                  alt="Haití">
+                <div class="carousel-caption ">
+                  <h5>Haití</h5>
+                </div>
+              </div>
+              <div class="carousel-item ">
+                <img src="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2024/06/img_CR.png" class="d-block w-100"
+                  alt="Costa Rica">
+                <div class="carousel-caption ">
+                  <h5>Costa Rica</h5>
+                </div>
+              </div>
+              <div class="carousel-item active">
+                <img src="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2024/06/img_colomnbia.png" class="d-block w-100"
+                  alt="Colombia">
+                <div class="carousel-caption ">
+                  <h5>Colombia</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2024/06/img-alemania.png" class="d-block w-100"
+                  alt="Alemania">
+                <div class="carousel-caption ">
+                  <h5>Alemania</h5>
+                </div>
+              </div>
+              <div class="carousel-item ">
+                <img src="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2024/06/img_italia.png" class="d-block w-100"
+                  alt="Italia">
+                <div class="carousel-caption ">
+                  <h5>Italia</h5>
+                </div>
+              </div>
+              <div class="carousel-item ">
+                <img src="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2024/06/turquia-v.png" class="d-block w-100"
+                  alt="Italia">
+                <div class="text-center">
+                  <a href="https://www.youtube.com/watch?v=dSo9GD6cnh4" target="_blank"><img
+                      src="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2024/06/texto-enlace.png" alt="enlace"></a>
+                </div>
+                <div class="carousel-caption ">
+                  <h5>Turquía</h5>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFadeco" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFadeco" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- haiti -->
+<div class="container">
+  <div class="row justify-content-center">
+      <div class=" col-12 col-md-8 mt-5">
+          <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade carousel-dark" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="5" aria-label="Slide 6"></button>
+              <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="6" aria-label="Slide 7"></button>
+              <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="7" aria-label="Slide 8"></button>
+              <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="8" aria-label="Slide 9"></button>
+            </div>
+              <div class="carousel-inner">
+                                
+                <div class="carousel-item active">
+                  <img src="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2024/06/img_haiti.png" class="d-block w-100" alt="Haití">
+                  <div class="carousel-caption ">
+                      <h5>Haití</h5>                            
+                    </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2024/06/img_CR.png" class="d-block w-100" alt="Costa Rica">
+                  <div class="carousel-caption ">
+                      <h5>Costa Rica</h5>                            
+                    </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2024/06/img_colomnbia.png" class="d-block w-100" alt="Colombia">
+                  <div class="carousel-caption ">
+                      <h5>Colombia</h5>                            
+                    </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2024/06/img-alemania.png" class="d-block w-100" alt="Alemania">
+                  <div class="carousel-caption ">
+                      <h5>Alemania</h5>                            
+                    </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2024/06/img_italia.png" class="d-block w-100" alt="Italia">
+                  <div class="carousel-caption ">
+                      <h5>Italia</h5>                            
+                    </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2024/06/turquia-v.png" class="d-block w-100" alt="Italia">
+                  <div class="text-center">
+                    <a href="https://www.youtube.com/watch?v=dSo9GD6cnh4" target="_blank"><img src="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2024/06/texto-enlace.png" alt="enlace"></a>
+                  </div>
+                  <div class="carousel-caption ">
+                      <h5>Turquía</h5>                                                      
+                    </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2024/06/img_canada.png" class="d-block w-100" alt="Canadá">
+                  <div class="carousel-caption ">
+                      <h5>Canadá</h5>                          
+                    </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <img src="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2024/06/img_usa_1.png" class="d-block w-100" alt="USA 1">
+                <div class="carousel-caption ">
+                    <h5>Estados Unidos</h5>
+                    
+                  </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2024/06/img_usa_2.png" class="d-block w-100" alt="USA 2">
+                <div class="carousel-caption ">
+                    <h5>Estados Unidos</h5>                            
+                  </div>
+              </div>
+
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          
+      </div>
+  </div>
+</div>
+
+<!-- costa rica -->
+<div class="container">
+  <div class="row justify-content-center">
+      <div class=" col-12 col-md-8 mt-5">
+          <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade carousel-dark" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="5" aria-label="Slide 6"></button>
+              <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="6" aria-label="Slide 7"></button>
+              <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="7" aria-label="Slide 8"></button>
+              <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="8" aria-label="Slide 9"></button>
+            </div>
+              <div class="carousel-inner">
+                                
+                
+                <div class="carousel-item active">
+                  <img src="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2024/06/img_CR.png" class="d-block w-100" alt="Costa Rica">
+                  <div class="carousel-caption ">
+                      <h5>Costa Rica</h5>                            
+                    </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2024/06/img_colomnbia.png" class="d-block w-100" alt="Colombia">
+                  <div class="carousel-caption ">
+                      <h5>Colombia</h5>                            
+                    </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2024/06/img-alemania.png" class="d-block w-100" alt="Alemania">
+                  <div class="carousel-caption ">
+                      <h5>Alemania</h5>                            
+                    </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2024/06/img_italia.png" class="d-block w-100" alt="Italia">
+                  <div class="carousel-caption ">
+                      <h5>Italia</h5>                            
+                    </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2024/06/turquia-v.png" class="d-block w-100" alt="Italia">
+                  <div class="text-center">
+                    <a href="https://www.youtube.com/watch?v=dSo9GD6cnh4" target="_blank"><img src="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2024/06/texto-enlace.png" alt="enlace"></a>
+                  </div>
+                  <div class="carousel-caption ">
+                      <h5>Turquía</h5>                                                      
+                    </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2024/06/img_canada.png" class="d-block w-100" alt="Canadá">
+                  <div class="carousel-caption ">
+                      <h5>Canadá</h5>                          
+                    </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <img src="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2024/06/img_usa_1.png" class="d-block w-100" alt="USA 1">
+                <div class="carousel-caption ">
+                    <h5>Estados Unidos</h5>
+                    
+                  </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2024/06/img_usa_2.png" class="d-block w-100" alt="USA 2">
+                <div class="carousel-caption ">
+                    <h5>Estados Unidos</h5>                            
+                  </div>
+              </div>
+
+              <div class="carousel-item">
+                <img src="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2024/06/img_haiti.png" class="d-block w-100" alt="Haití">
+                <div class="carousel-caption ">
+                    <h5>Haití</h5>                            
+                  </div>
+              </div>
+
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          
+      </div>
+  </div>
+</div>
+
+<!-- colombia -->
+<div class="container">
+  <div class="row justify-content-center">
+    <div class=" col-12 col-md-8 mt-5">
+      <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade carousel-dark" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="3"
+            aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="4"
+            aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="5"
+            aria-label="Slide 6"></button>
+          <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="6"
+            aria-label="Slide 7"></button>
+          <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="7"
+            aria-label="Slide 8"></button>
+          <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="8"
+            aria-label="Slide 9"></button>
+        </div>
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <img src="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2024/06/img_colomnbia.png"
+              class="d-block w-100" alt="Colombia">
+            <div class="carousel-caption ">
+              <h5>Colombia</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2024/06/img-alemania.png" class="d-block w-100"
+              alt="Alemania">
+            <div class="carousel-caption ">
+              <h5>Alemania</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2024/06/img_italia.png" class="d-block w-100"
+              alt="Italia">
+            <div class="carousel-caption ">
+              <h5>Italia</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2024/06/turquia-v.png" class="d-block w-100"
+              alt="Italia">
+            <div class="text-center">
+              <a href="https://www.youtube.com/watch?v=dSo9GD6cnh4" target="_blank"><img
+                  src="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2024/06/texto-enlace.png" alt="enlace"></a>
+            </div>
+            <div class="carousel-caption ">
+              <h5>Turquía</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2024/06/img_canada.png" class="d-block w-100"
+              alt="Canadá">
+            <div class="carousel-caption ">
+              <h5>Canadá</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2024/06/img_usa_1.png" class="d-block w-100"
+            alt="USA 1">
+          <div class="carousel-caption ">
+            <h5>Estados Unidos</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2024/06/img_usa_2.png" class="d-block w-100"
+            alt="USA 2">
+          <div class="carousel-caption ">
+            <h5>Estados Unidos</h5>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2024/06/img_haiti.png" class="d-block w-100"
+            alt="Haití">
+          <div class="carousel-caption ">
+            <h5>Haití</h5>
+          </div>
+        </div>
+
+        <div class="carousel-item ">
+          <img src="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2024/06/img_CR.png" class="d-block w-100" alt="Costa Rica">
+          <div class="carousel-caption ">
+              <h5>Costa Rica</h5>                            
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- alemania -->
+<div class="container">
+  <div class="row justify-content-center">
+    <div class=" col-12 col-md-8 mt-5">
+      <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade carousel-dark" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="3"
+            aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="4"
+            aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="5"
+            aria-label="Slide 6"></button>
+          <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="6"
+            aria-label="Slide 7"></button>
+          <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="7"
+            aria-label="Slide 8"></button>
+          <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="8"
+            aria-label="Slide 9"></button>
+        </div>
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <img src="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2024/06/img-alemania.png" class="d-block w-100"
+              alt="Alemania">
+            <div class="carousel-caption ">
+              <h5>Alemania</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2024/06/img_italia.png" class="d-block w-100"
+              alt="Italia">
+            <div class="carousel-caption ">
+              <h5>Italia</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2024/06/turquia-v.png" class="d-block w-100"
+              alt="Italia">
+            <div class="text-center">
+              <a href="https://www.youtube.com/watch?v=dSo9GD6cnh4" target="_blank"><img
+                  src="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2024/06/texto-enlace.png" alt="enlace"></a>
+            </div>
+            <div class="carousel-caption ">
+              <h5>Turquía</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2024/06/img_canada.png" class="d-block w-100"
+              alt="Canadá">
+            <div class="carousel-caption ">
+              <h5>Canadá</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2024/06/img_usa_1.png" class="d-block w-100"
+            alt="USA 1">
+          <div class="carousel-caption ">
+            <h5>Estados Unidos</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2024/06/img_usa_2.png" class="d-block w-100"
+            alt="USA 2">
+          <div class="carousel-caption ">
+            <h5>Estados Unidos</h5>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2024/06/img_haiti.png" class="d-block w-100"
+            alt="Haití">
+          <div class="carousel-caption ">
+            <h5>Haití</h5>
+          </div>
+        </div>
+
+        <div class="carousel-item ">
+          <img src="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2024/06/img_CR.png" class="d-block w-100" alt="Costa Rica">
+          <div class="carousel-caption ">
+              <h5>Costa Rica</h5>                            
+            </div>
+        </div>
+        <div class="carousel-item ">
+          <img src="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2024/06/img_colomnbia.png"
+            class="d-block w-100" alt="Colombia">
+          <div class="carousel-caption ">
+            <h5>Colombia</h5>
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Italia -->
+<div class="container">
+  <div class="row justify-content-center">
+    <div class=" col-12 col-md-8 mt-5">
+      <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade carousel-dark" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="3"
+            aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="4"
+            aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="5"
+            aria-label="Slide 6"></button>
+          <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="6"
+            aria-label="Slide 7"></button>
+          <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="7"
+            aria-label="Slide 8"></button>
+          <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="8"
+            aria-label="Slide 9"></button>
+        </div>
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <img src="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2024/06/img_italia.png" class="d-block w-100"
+              alt="Italia">
+            <div class="carousel-caption ">
+              <h5>Italia</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2024/06/turquia-v.png" class="d-block w-100"
+              alt="Italia">
+            <div class="text-center">
+              <a href="https://www.youtube.com/watch?v=dSo9GD6cnh4" target="_blank"><img
+                  src="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2024/06/texto-enlace.png" alt="enlace"></a>
+            </div>
+            <div class="carousel-caption ">
+              <h5>Turquía</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2024/06/img_canada.png" class="d-block w-100"
+              alt="Canadá">
+            <div class="carousel-caption ">
+              <h5>Canadá</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2024/06/img_usa_1.png" class="d-block w-100"
+            alt="USA 1">
+          <div class="carousel-caption ">
+            <h5>Estados Unidos</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2024/06/img_usa_2.png" class="d-block w-100"
+            alt="USA 2">
+          <div class="carousel-caption ">
+            <h5>Estados Unidos</h5>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2024/06/img_haiti.png" class="d-block w-100"
+            alt="Haití">
+          <div class="carousel-caption ">
+            <h5>Haití</h5>
+          </div>
+        </div>
+
+        <div class="carousel-item ">
+          <img src="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2024/06/img_CR.png" class="d-block w-100" alt="Costa Rica">
+          <div class="carousel-caption ">
+              <h5>Costa Rica</h5>                            
+            </div>
+        </div>
+        <div class="carousel-item ">
+          <img src="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2024/06/img_colomnbia.png"
+            class="d-block w-100" alt="Colombia">
+          <div class="carousel-caption ">
+            <h5>Colombia</h5>
+          </div>
+        </div>
+
+        <div class="carousel-item ">
+          <img src="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2024/06/img-alemania.png" class="d-block w-100"
+            alt="Alemania">
+          <div class="carousel-caption ">
+            <h5>Alemania</h5>
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- turquia -->
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>
+<script>
+  /* jQuery('.modal').on('show.bs.modal', function (event) {
+jQuery(this).find('iframe').attr("src", jQuery(event.relatedTarget).data('url') );
+});
+
+jQuery('.modal').on('hidden.bs.modal', function (e) {
+jQuery(this).find('iframe').attr("src", "");
+}); /*
+</script>
