@@ -7,9 +7,6 @@
     <link rel='stylesheet' id='google-fonts-css' href='https://fonts.googleapis.com/css2?family=Montserrat%3Aital%2Cwght%400%2C300%3B0%2C400%3B0%2C500%3B0%2C700%3B1%2C300%3B1%2C400%3B1%2C500%3B1%2C700&#038;display=swap&#038;ver=6.4.1' type='text/css' media='all' />
     <link rel='stylesheet' id='bootstrap-css' href='includes/assets/vendor/bootstrap/css/bootstrap.min.css' type='text/css' media='all' />
 <style>
-    /* media kit */
-
-
  .menu_overlay {
   top: 0;
   left: 0;
@@ -24,9 +21,8 @@
   background-size: cover;
   z-index: 1031;
   transform: translateX(110%);
-  transition: transform 0.5s ease;
+  transition: transform 0.8s ease;
 }
-
 .menu_overlay .fas {
   position: absolute;
   right: 20px;
@@ -43,50 +39,33 @@
   color: #ed6a2a;
   transform: scale(1.1) rotate(180deg);
 }
-
 .text-header{
     font-size: 22px;
     font-weight: 300;
     text-align: center;
+    line-height: 30px;
 }
-
 #menuBtn {
   display: none;
 }
-
 #menuBtn:checked ~ .menu_overlay {
   transform: translateX(0);
+  transition: transform 0.8s ease;
 }
-
-.landing_page {
-  max-height: 100vh;
-  height: 100%;
-  width: 100%;
-  position: relative;
-}
-
 .menu-medios {
   position: fixed;
   right: 4px;
-  top: 80vh;
+  top: 78vh;
 }
 img.btn-medios {
   width: 200px;
   cursor: pointer;
 }
-.fas {
-  font-size: 2rem;
-  color: #222;
-}
-
-.fas:hover {
-  color: #4b134f;
-}
 @media (max-width: 575.98px) { 
   .menu-medios {
     position: fixed;
     right: 0px;
-    top: 82vh;
+    top: 75vh;
   }
   .btn-medios{
     width: 180px;
@@ -95,22 +74,16 @@ img.btn-medios {
     margin-top: 40px;
   }
  }
-@media screen and (max-width: 650px) {
-  .list a {
-    font-size: 2rem;
-  }
-}
-
-
-
-   
-/* media kit */
 </style>
    
     <title>ventana</title>
 </head>
 <body >
-    
+    <div class="container">
+      <div class="row">
+       <p style="height: 2800px;"></p>
+      </div>
+    </div>
    
     <div class="container-fluid g-0">
         <input type="checkbox" name="" id="menuBtn">
@@ -118,37 +91,47 @@ img.btn-medios {
             <label for="menuBtn">
                 <i class="fas fa-times"></i>
             </label>
-            <div class="container-fluid">
+            <div class="container">
                 
                 <div class="row justify-content-center">
-                    <div class="col-12 col-md-10">
+                    <div class="col-12 col-md-9">
                         <p class="text-header">Como estudiante de Prepa en Línea SEP, cuentas con varias opciones para mantener tu trayectoria educativa al corriente, consulta los recursos para mantenerte informado de estas opciones.</p>
                         <div class="text-center"
                         ><img src="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2024/06/line-header.webp" alt=""></div>
                     </div>
                 </div>
-                              
-
-
                 <div class="row justify-content-center ">
 
                     <div class="col-12 col-md-5 my-3 text-lg-end text-center" >
                         <p><img src="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2024/06/opciones_de_regularizacion_Infografia-scaled.webp" width="335" class="img-fluid" alt="infografia"></p>
-                        <p><a href="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2024/06/opciones_de_regularizacion_Infografia-scaled.webp" download="infografia-regularización.webp"><img src="i/boton-descarga-infografia.webp" alt="boton infografía"></a></p>
+                        <p><a href="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2024/06/opciones_de_regularizacion_Infografia-scaled.webp" download="infografia-regularización.webp"><img src="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2024/06/boton-descarga-infografia.webp" alt="boton infografía"></a></p>
                     </div>
                     <div class="col-1 text-center d-none d-md-inline-block">
                         <img src="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2024/06/line-divicion.webp" height="490" alt="">
                     </div>
-                    <div class="col-12 col-md-5 my-3 text-lg-start text-center">
-                        <p><iframe class="my-1" width="280" height="155" src="https://www.youtube.com/embed/VV3w8lXn5KE?si=ypbSwahr_swlWEuC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
-                        <p><iframe class="my-1" width="280" height="155" src="https://www.youtube.com/embed/3cd3RZE2S-8?si=ltpvEOU_7vwKKb_m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
-                        <p><iframe class="my-1" width="280" height="155" src="https://www.youtube.com/embed/XDjVSrjcgkQ?si=uz0s4mPKLW-ttbS5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
+                    <div class="col-12 col-md-3 my-3 text-lg-start text-center">
+                      <p class="mb-3">
+                        <div class="ratio ratio-16x9">
+                          <lite-youtube videoid="VV3w8lXn5KE" playlabel="Play: Keynote (Google I/O '18)"></lite-youtube>
+                        </div>
+                      </p>
+                      <p class="mb-3">
+                        <div class="ratio ratio-16x9">
+                          <lite-youtube videoid="3cd3RZE2S-8" playlabel="Play: Keynote (Google I/O '18)"></lite-youtube>
+                        </div>
+                      </p>
+                      <p class="mb-3">
+                        <div class="ratio ratio-16x9">
+                          <lite-youtube videoid="XDjVSrjcgkQ" playlabel="Play: Keynote (Google I/O '18)"></lite-youtube>
+                        </div>
+                      </p>
+                        
                     </div>
                 </div>
             </div>
         </div>
 
-<!-- boton medios -->
+<!-- boton  -->
         <div class="landing_page">
           <div class="menu-medios">
             <label for="menuBtn">
@@ -156,11 +139,50 @@ img.btn-medios {
             </label>
           </div>
         </div>
-<!-- boton medios -->
+<!-- boton  -->
     </div>
 
     <script type="text/javascript" src="includes/assets/vendor/bootstrap/js/bootstrap.bundle.min.js" id="botstrap-js-js"></script>
     <script  type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script src="https://kit.fontawesome.com/90f9d785fc.js" crossorigin="anonymous"></script>
+    <script type='text/javascript'>
+
+     /*  window.addEventListener("scroll", function () {
+        if (window.scrollY > 40 ) {
+          jQuery(".menu-medios").stop().animate({
+                marginTop: 20 
+              });
+        } else 
+        jQuery(".menu-medios").stop().animate({
+                marginTop: -20
+              });
+      }); */
+
+
+
+      // <![CDATA[
+      jQuery(function () {
+          var offset = jQuery(".menu-medios").offset();
+          var  topPadding = -1400;
+          jQuery(window).scroll(function () {
+            if (jQuery(window).scrollTop() > offset.top) {
+              jQuery(".menu-medios").stop().animate({
+                marginTop: 40 /* jQuery(window).scrollTop() - (offset.top)/2 + topPadding */
+              });
+            } else {
+              jQuery(".menu-medios").stop().animate({
+                marginTop: 0
+              });
+            };
+          }); 
+        });
+     
+      // ]]>
+      window.onscroll = function () {
+        var y = window.scrollY;
+        console.log(y);
+      }
+      </script>
+      
 </body>
 </html>
