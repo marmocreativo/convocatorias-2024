@@ -1308,6 +1308,7 @@ img.btn-medios {
   width: 100%;
   line-height: 18px;
   text-align: center;
+  height: 60px;
 }
 .one .btn-media span{
   display: inline-block;
@@ -1324,6 +1325,7 @@ img.btn-medios {
   width: 100%;
   line-height: 18px;
   text-align: center;
+  height: 60px;
 }
 .two .btn-media span{
   display: inline-block;
@@ -1340,6 +1342,7 @@ img.btn-medios {
   width: 100%;
   line-height: 18px;
   text-align: center;
+  height: 60px;
 }
 .three .btn-media span{
   display: inline-block;
@@ -1363,6 +1366,15 @@ img.btn-medios {
   vertical-align: middle;
   text-align: left;
 }
+div#collapseCompartir img {
+  width: 36px;
+}
+
+div#collapseCompartir span.compartir-rs img {
+  width: 20px;
+}
+
+
 .two .btn-download{
   border: 1px solid #D9D9D9;
   border-radius: 1px;
@@ -1373,6 +1385,7 @@ img.btn-medios {
   width: 100%;
   line-height: 18px;
   text-align: center;
+  height: 60px;
 }
 
 .three .btn-download span{
